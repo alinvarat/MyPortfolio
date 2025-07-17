@@ -1,21 +1,31 @@
+"use client";
 import Link from 'next/link';
 
 const Navbar = () => {
+    const handleScroll = (e) => {
+		e.preventDefault();
+		const href = e.currentTarget.href;
+		const targetId = href.replace(/.*#/, "");
+		const elem = document.getElementById(targetId);
+		elem?.scrollIntoView({
+			behavior: "smooth",
+		});
+	};
+
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-10 shadow-md">
+    <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-sm z-10 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
-        {/* ส่วนโลโก้ */}
         <div className="text-2xl font-bold text-gray-800">
-          <Link href="/">พอร์ตโฟลิโอของฉัน</Link> 
+          <a href="/" className="hover:text-purple-600">พอร์ตโฟลิโอของฉัน</a> 
         </div>
         
-        {/* ส่วนเมนู */}
         <div className="hidden md:flex space-x-8">
-          <Link href="/" className="text-purple-600 font-semibold">หน้าหลัก</Link>
-          <Link href="#about" className="hover:text-purple-600">ประวัติ</Link>
-          <Link href="#skills" className="hover:text-purple-600">ความสามารถ</Link>
-          <Link href="#work" className="hover:text-purple-600">งานอดิเรก</Link>
-          <Link href="#contact" className="hover:text-purple-600">ติดต่อ</Link>
+          <a href="#home" onClick={handleScroll} className="text-purple-600 font-semibold">หน้าหลัก</a>
+          <a href="#about" onClick={handleScroll} className="hover:text-purple-600">เกี่ยวกับฉัน</a>
+          <a href="#history" onClick={handleScroll} className="hover:text-purple-600">ประวัติ</a>
+          <a href="#skills" onClick={handleScroll} className="hover:text-purple-600">ความสามารถ</a>
+          <a href="#work" onClick={handleScroll} className="hover:text-purple-600">ผลงาน</a>
+          <a href="#contact" onClick={handleScroll} className="hover:text-purple-600">ติดต่อ</a>
         </div>
       </div>
     </nav>

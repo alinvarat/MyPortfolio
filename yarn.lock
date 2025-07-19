@@ -72,20 +72,20 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@next/env@15.4.1":
-  version "15.4.1"
-  resolved "https://registry.npmjs.org/@next/env/-/env-15.4.1.tgz"
-  integrity sha512-DXQwFGAE2VH+f2TJsKepRXpODPU+scf5fDbKOME8MMyeyswe4XwgRdiiIYmBfkXU+2ssliLYznajTrOQdnLR5A==
+"@next/env@15.4.2":
+  version "15.4.2"
+  resolved "https://registry.npmjs.org/@next/env/-/env-15.4.2.tgz"
+  integrity sha512-kd7MvW3pAP7tmk1NaiX4yG15xb2l4gNhteKQxt3f+NGR22qwPymn9RBuv26QKfIKmfo6z2NpgU8W2RT0s0jlvg==
 
-"@next/swc-linux-x64-gnu@15.4.1":
-  version "15.4.1"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-15.4.1.tgz"
-  integrity sha512-Jj0Rfw3wIgp+eahMz/tOGwlcYYEFjlBPKU7NqoOkTX0LY45i5W0WcDpgiDWSLrN8KFQq/LW7fZq46gxGCiOYlQ==
+"@next/swc-linux-x64-gnu@15.4.2":
+  version "15.4.2"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-15.4.2.tgz"
+  integrity sha512-PHLYOC9W2cu6I/JEKo77+LW4uPNvyEQiSkVRUQPsOIsf01PRr8PtPhwtz3XNnC9At8CrzPkzqQ9/kYDg4R4Inw==
 
-"@next/swc-linux-x64-musl@15.4.1":
-  version "15.4.1"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-15.4.1.tgz"
-  integrity sha512-9WlEZfnw1vFqkWsTMzZDgNL7AUI1aiBHi0S2m8jvycPyCq/fbZjtE/nDkhJRYbSjXbtRHYLDBlmP95kpjEmJbw==
+"@next/swc-linux-x64-musl@15.4.2":
+  version "15.4.2"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-15.4.2.tgz"
+  integrity sha512-lpmUF9FfLFns4JbTu+5aJGA8aR9dXaA12eoNe9CJbVkGib0FDiPa4kBGTwy0xDxKNGlv3bLDViyx1U+qafmuJQ==
 
 "@swc/helpers@0.5.15":
   version "0.5.15"
@@ -138,7 +138,7 @@
     "@tailwindcss/oxide-win32-arm64-msvc" "4.1.11"
     "@tailwindcss/oxide-win32-x64-msvc" "4.1.11"
 
-"@tailwindcss/postcss@^4":
+"@tailwindcss/postcss@^4.1.11":
   version "4.1.11"
   resolved "https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.1.11.tgz"
   integrity sha512-q/EAIIpF6WpLhKEuQSEVMZNMIY8KhWoAemZ9eylNAih9jxMGAYPPWBn3I9QL/2jZ+e7OEz/tZkX5HwbBR4HohA==
@@ -335,25 +335,25 @@ nanoid@^3.3.11, nanoid@^3.3.6:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz"
   integrity sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==
 
-next@15.4.1:
-  version "15.4.1"
-  resolved "https://registry.npmjs.org/next/-/next-15.4.1.tgz"
-  integrity sha512-eNKB1q8C7o9zXF8+jgJs2CzSLIU3T6bQtX6DcTnCq1sIR1CJ0GlSyRs1BubQi3/JgCnr9Vr+rS5mOMI38FFyQw==
+next@15.4.2:
+  version "15.4.2"
+  resolved "https://registry.npmjs.org/next/-/next-15.4.2.tgz"
+  integrity sha512-oH1rmFso+84NIkocfuxaGKcXIjMUTmnzV2x0m8qsYtB4gD6iflLMESXt5XJ8cFgWMBei4v88rNr/j+peNg72XA==
   dependencies:
-    "@next/env" "15.4.1"
+    "@next/env" "15.4.2"
     "@swc/helpers" "0.5.15"
     caniuse-lite "^1.0.30001579"
     postcss "8.4.31"
     styled-jsx "5.1.6"
   optionalDependencies:
-    "@next/swc-darwin-arm64" "15.4.1"
-    "@next/swc-darwin-x64" "15.4.1"
-    "@next/swc-linux-arm64-gnu" "15.4.1"
-    "@next/swc-linux-arm64-musl" "15.4.1"
-    "@next/swc-linux-x64-gnu" "15.4.1"
-    "@next/swc-linux-x64-musl" "15.4.1"
-    "@next/swc-win32-arm64-msvc" "15.4.1"
-    "@next/swc-win32-x64-msvc" "15.4.1"
+    "@next/swc-darwin-arm64" "15.4.2"
+    "@next/swc-darwin-x64" "15.4.2"
+    "@next/swc-linux-arm64-gnu" "15.4.2"
+    "@next/swc-linux-arm64-musl" "15.4.2"
+    "@next/swc-linux-x64-gnu" "15.4.2"
+    "@next/swc-linux-x64-musl" "15.4.2"
+    "@next/swc-win32-arm64-msvc" "15.4.2"
+    "@next/swc-win32-x64-msvc" "15.4.2"
     sharp "^0.34.3"
 
 node-releases@^2.0.19:
@@ -394,19 +394,14 @@ postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-"react-dom@^18.0.0 || ^19.0.0", "react-dom@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react-dom@^19.1.0:
+"react-dom@^18.0.0 || ^19.0.0", "react-dom@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0":
   version "19.1.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-19.1.0.tgz"
   integrity sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==
   dependencies:
     scheduler "^0.26.0"
 
-react-icons@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.npmjs.org/react-icons/-/react-icons-5.5.0.tgz"
-  integrity sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==
-
-react@*, "react@^18.0.0 || ^19.0.0", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react@^19.1.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0":
+"react@^18.0.0 || ^19.0.0", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react@^19.1.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0":
   version "19.1.0"
   resolved "https://registry.npmjs.org/react/-/react-19.1.0.tgz"
   integrity sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==

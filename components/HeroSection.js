@@ -1,6 +1,8 @@
 "use client";
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import AnimatedWrapper from './AnimatedWrapper';
 
 const HeroSection = () => {
@@ -25,10 +27,10 @@ const HeroSection = () => {
 					</AnimatedWrapper>
 					<AnimatedWrapper delay={0.2}>
 						<p className="mt-4 text-lg md:text-2xl text-gray-600 leading-none">
-							นี้เป็นเว็บไซต์ส่วนตัวขอผม ที่แสดงผลงาน
+							นี้เป็นเว็บไซต์ส่วนที่แสดงผลงา
 						</p>
 						<p className="mt-4 text-lg md:text-2xl text-gray-600 leading-none">
-							ความสามารถและประวัติส่วนตัว
+							และความสามารถของผม
 						</p>
 					</AnimatedWrapper>
 					

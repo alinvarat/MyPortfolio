@@ -13,7 +13,7 @@ const Navbar = () => {
 	};
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-sm z-10 shadow-md">
+    <nav className="fixed top-0 left-0 w-full bg-white z-10">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-2xl font-bold text-gray-800">
           <a href="/" className="hover:text-purple-600">พอร์ตโฟลิโอของฉัน</a> 

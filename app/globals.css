@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: #000000;
+	--foreground: #000000;
 }
 html {
 	scroll-behavior: smooth;
@@ -14,7 +14,7 @@ html {
 }
 
 .grid-item {
-	background-color: #f0f0f0;
+	background-color: #000000;
 	padding: 1rem;
 }
 

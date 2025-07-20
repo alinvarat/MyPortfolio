@@ -62,15 +62,19 @@ const HeroSection = () => {
 						</a>
 					</div>
 				</div>
+				
+				{/* --- ส่วนของรูปภาพที่แก้ไข --- */}
 				<div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
 					<div className="relative w-72 h-72 md:w-96 md:h-96">
-						<div className="absolute inset-0 bg-blue-400 rounded-full opacity-50"></div>
+						{/* กรอบไล่ระดับสีแบบเคลื่อนไหว */}
+						<div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 opacity-75 blur animate-slow-spin"></div>
+						{/* รูปภาพ */}
 						<Image
-							src="/your-avatar.png"
+							src="/images/avatar1.png"
 							alt="Your Avatar"
 							width={400}
 							height={400}
-							className="relative object-cover rounded-full"
+							className="relative w-full h-full object-cover rounded-full"
 						/>
 					</div>
 				</div>

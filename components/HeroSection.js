@@ -14,9 +14,26 @@ const HeroSection = () => {
 	};
 
 	return (
-		<section className="bg-transparent">
-			<div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-4">
-				<div className="md:w-1/2 text-center md:text-left">
+		// แก้ไข: เปลี่ยนโครงสร้างทั้งหมดเพื่อสร้าง Layout แบบซ้อนทับ
+		<section className="relative bg-transparent min-h-screen flex items-center overflow-hidden">
+			
+			{/* Layer 1: รูปภาพพื้นหลัง (แสดงด้านขวา) */}
+			{/* แก้ไข: ปรับความกว้างเป็น md:w-2/5 เพื่อให้รูปภาพเล็กลง */}
+			<div className="absolute bottom-0 right-0 w-full md:w-2/5 h-full z-0">
+				<Image
+					src="/images/avatar1.png"
+					alt="Your Avatar Background"
+					layout="fill"
+					objectFit="cover"
+					objectPosition="center"
+					// ทำให้รูปภาพจางลงบนมือถือ เพื่อให้ข้อความอ่านง่าย
+					className="opacity-30 md:opacity-100"
+				/>
+			</div>
+
+			{/* Layer 2: เนื้อหา (แสดงด้านซ้ายและอยู่ด้านบน) */}
+			<div className="relative z-10 container mx-auto flex items-center h-full min-h-screen">
+				<div className="md:w-1/2 text-center md:text-left p-4">
 					<h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
 						สวัสดีผมชื่อ<span className="text-yellow-400">หยก</span>
 					</h1>
@@ -60,22 +77,6 @@ const HeroSection = () => {
 						>
 							<FaGithub />
 						</a>
-					</div>
-				</div>
-				
-				{/* --- ส่วนของรูปภาพที่แก้ไข --- */}
-				<div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-					<div className="relative w-72 h-72 md:w-96 md:h-96">
-						{/* กรอบไล่ระดับสีแบบเคลื่อนไหว */}
-						<div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 opacity-75 blur animate-slow-spin"></div>
-						{/* รูปภาพ */}
-						<Image
-							src="/images/avatar1.png"
-							alt="Your Avatar"
-							width={400}
-							height={400}
-							className="relative w-full h-full object-cover rounded-full"
-						/>
 					</div>
 				</div>
 			</div>

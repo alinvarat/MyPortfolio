@@ -14,7 +14,7 @@ const HeroSection = () => {
 	};
 
 	return (
-		<section>
+		<section className="bg-transparent">
 			<div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-4">
 				<div className="md:w-1/2 text-center md:text-left">
 					<h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">

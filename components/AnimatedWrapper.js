@@ -19,6 +19,7 @@ const AnimatedSection = ({ children }) => {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       transition={{ duration: 0.8, ease: "easeOut" }}
+      className="bg-transparent"
     >
       {children}
     </motion.div>

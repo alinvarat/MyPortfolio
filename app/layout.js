@@ -22,8 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} antialiased`}>
-        <Navbar /> {}
-        <main>{children}</main>
+        <Navbar />
+
+        <main className="bg-transparent">{children}</main>
       </body>
     </html>
   );

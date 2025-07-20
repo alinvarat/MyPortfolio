@@ -2,19 +2,6 @@
 html {
   scroll-snap-type: y mandatory;
 }
-
-.scroll-section {
-  scroll-snap-align: start;
-  height: 100vh;
-  /* --- การเปลี่ยนแปลง --- */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem; /* เพิ่ม padding พื้นฐานสำหรับทุก section */
-  overflow-y: auto;   /* (สำคัญที่สุด) อนุญาตให้เลื่อนได้ถ้าเนื้อหาล้น */
-}
-
 /* --- Animated Gradient Background --- */
 body {
   color: #e2e8f0; /* slate-200 */
@@ -33,6 +20,16 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* ทำให้ทุก Section มีระยะห่างที่เหมาะสม */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 1rem; /* เพิ่ม padding บน-ล่าง */
 }
 
 /* โค้ดอื่นๆ ของคุณ (ถ้ามี) */

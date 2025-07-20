@@ -1,35 +1,42 @@
 @import 'tailwindcss';
-
-:root {
-	--background: #000000;
-	--foreground: #000000;
-}
 html {
-	scroll-behavior: smooth;
-	scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
+
 .scroll-section {
   scroll-snap-align: start;
   height: 100vh;
-}
-.grid-container {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-
-.grid-item {
-	background-color: #000000;
-	padding: 1rem;
+  /* --- การเปลี่ยนแปลง --- */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem; /* เพิ่ม padding พื้นฐานสำหรับทุก section */
+  overflow-y: auto;   /* (สำคัญที่สุด) อนุญาตให้เลื่อนได้ถ้าเนื้อหาล้น */
 }
 
-@media (min-width: 768px) {
-	.grid-container {
-		flex-direction: row;
-	}
-}
+/* --- Animated Gradient Background --- */
 body {
-  background-color: #3d03c3;
   color: #e2e8f0; /* slate-200 */
+  background: linear-gradient(-45deg, #3d03c3, #0f0c29, #24243e, #3d03c3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* โค้ดอื่นๆ ของคุณ (ถ้ามี) */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}

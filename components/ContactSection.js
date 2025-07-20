@@ -7,7 +7,7 @@ const ContactSection = () => {
                     สนใจร่วมงานหรือมีคำถามเพิ่มเติม สามารถติดต่อผมได้ผ่านช่องทางด้านล่าง
                 </p>
                 <div className="bg-gray-100 p-8 rounded-lg shadow-inner">
-                    <p className="text-2xl font-semibold text-purple-600">yok.alinvarat@email.com</p>
+                    <p className="text-2xl font-semibold text-purple-600">alinvarat@gmail.com</p>
                     <p className="mt-2 text-gray-600">หรือผ่าน Social Media ที่แสดงในหน้าแรก</p>
                 </div>
             </div>

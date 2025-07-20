@@ -27,7 +27,7 @@ const HeroSection = () => {
 					</AnimatedWrapper>
 					<AnimatedWrapper delay={0.2}>
 						<p className="mt-4 text-lg md:text-2xl text-gray-600 leading-none">
-							นี้เป็นเว็บไซต์ส่วนที่แสดงผลงา
+							นี้เป็นเว็บไซต์ส่วนที่แสดงผลงาน
 						</p>
 						<p className="mt-4 text-lg md:text-2xl text-gray-600 leading-none">
 							และความสามารถของผม

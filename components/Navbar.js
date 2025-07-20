@@ -1,10 +1,10 @@
-"use client"; // 1. เพิ่มบรรทัดนี้เพื่อให้ใช้ usePathname ได้
+"use client";
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // 2. Import usePathname
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
-  const pathname = usePathname(); // 3. ดึง path ปัจจุบันมาเก็บไว้
+  const pathname = usePathname();
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-sm z-10 shadow-md">
@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:flex space-x-8">
-          {/* 4. ตรวจสอบ path แล้วกำหนด className แบบมีเงื่อนไข */}
+          {}
           <Link href="/" className={pathname === '/' ? 'text-purple-600 font-semibold' : 'hover:text-purple-600'}>
             หน้าหลัก
           </Link>

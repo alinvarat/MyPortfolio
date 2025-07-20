@@ -14,7 +14,7 @@ const HeroSection = () => {
 	};
 
 	return (
-		<section className="min-h-screen flex items-center pt-20">
+		<section>
 			<div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-4">
 				<div className="md:w-1/2 text-center md:text-left">
 					<h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">

@@ -40,7 +40,7 @@ const HeroSection = () => {
 							onClick={handleScroll}
 							className="mt-8 inline-block bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 transition duration-300"
 						>
-							เริ่มดูประวัติของฉัน
+							เริ่มดูผลงานของผม
 						</a>
 					</AnimatedWrapper>
 

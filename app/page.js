@@ -8,22 +8,22 @@ import ContactSection from '@/components/ContactSection';
 export default function Home() {
   return (
     <>
-      <div id="home">
+      <div id="home" className="scroll-section">
         <HeroSection />
       </div>
-      <div id="about">
+      <div id="about" className="scroll-section">
         <AboutSection />
       </div>
-      <div id="history">
+      <div id="history" className="scroll-section">
         <HistorySection />
       </div>
-      <div id="skills">
+      <div id="skills" className="scroll-section">
         <SkillsSection />
       </div>
-      <div id="work">
+      <div id="work" className="scroll-section">
         <ProjectsSection />
       </div>
-      <div id="contact">
+      <div id="contact" className="scroll-section">
         <ContactSection />
       </div>
     </>

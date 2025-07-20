@@ -1,20 +1,20 @@
 import Image from 'next/image';
 
 const ProjectCard = ({ title, description, imageUrl }) => (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
         <Image src={imageUrl} alt={title} width={500} height={300} className="w-full h-56 object-cover" />
-        <div className="p-6">
-            <h3 className="text-2xl font-bold mb-2">{title}</h3>
-            <p className="text-gray-700">{description}</p>
+        <div className="p-6 flex-grow">
+            <h3 className="text-2xl font-bold mb-2 text-white">{title}</h3>
+            <p className="text-gray-200">{description}</p>
         </div>
     </div>
 );
 
 const ProjectsSection = () => {
     return (
-        <section className="min-h-screen bg-gray-50 flex items-center justify-center py-20">
+        <section className="min-h-screen flex items-center justify-center py-20 bg-white/5">
             <div className="container mx-auto p-4 text-center">
-                <h2 className="text-4xl font-bold mb-12">ผลงาน</h2>
+                <h2 className="text-4xl font-bold mb-12 text-white">ผลงาน</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <ProjectCard 
                         title="หุ่นยนต์สำรวจอัตโนมัติ" 

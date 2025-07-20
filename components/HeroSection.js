@@ -1,9 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { FaFacebook } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import AnimatedWrapper from './AnimatedWrapper';
+import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const HeroSection = () => {
 	const handleScroll = (e) => {
@@ -17,75 +14,65 @@ const HeroSection = () => {
 	};
 
 	return (
-		<section className="min-h-screen flex items-center bg-gray-50 pt-20">
+		<section className="min-h-screen flex items-center pt-20">
 			<div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-4">
 				<div className="md:w-1/2 text-center md:text-left">
-					<AnimatedWrapper>
-						<h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
-							สวัสดีผมชื่อ<span className="text-purple-600">หยก</span>
-						</h1>
-					</AnimatedWrapper>
-					<AnimatedWrapper delay={0.2}>
-						<p className="mt-4 text-lg md:text-2xl text-gray-600 leading-none">
-							นี้เป็นเว็บไซต์ส่วนที่แสดงผลงาน
-						</p>
-						<p className="mt-4 text-lg md:text-2xl text-gray-600 leading-none">
-							และความสามารถของผม
-						</p>
-					</AnimatedWrapper>
+					<h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+						สวัสดีผมชื่อ<span className="text-yellow-400">หยก</span>
+					</h1>
+					<p className="mt-4 text-lg md:text-2xl text-gray-200 leading-none">
+						นี้เป็นเว็บไซต์ส่วนตัวขอผม ที่แสดงผลงาน
+					</p>
+					<p className="mt-4 text-lg md:text-2xl text-gray-200 leading-none">
+						ความสามารถและประวัติส่วนตัว
+					</p>
 					
-					<AnimatedWrapper delay={0.4}>
-						<a
-							href="#about"
-							onClick={handleScroll}
-							className="mt-8 inline-block bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 transition duration-300"
-						>
-							เริ่มดูผลงานของผม
-						</a>
-					</AnimatedWrapper>
+					<a
+						href="#about"
+						onClick={handleScroll}
+						className="mt-8 inline-block bg-white text-[#3d03c3] font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300"
+					>
+						เริ่มดูประวัติของฉัน
+					</a>
 
-					<AnimatedWrapper delay={0.6}>
-						<div className="mt-8 flex justify-center md:justify-start space-x-4">
-							<a
-								href="https://www.facebook.com/linwrath.tofu"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-2xl text-gray-600 hover:text-blue-600"
-							>
-								<FaFacebook />
-							</a>
-							<a
-								href="https://www.instagram.com/linwrath_tofu/"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-2xl text-gray-600 hover:text-pink-600"
-							>
-								<FaInstagram />
-							</a>
-							<a
-								href="https://github.com/alinvarat" 
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-2xl text-gray-600 hover:text-gray-900"
-							>
-								<FaGithub />
-							</a>
-						</div>
-					</AnimatedWrapper>
+					<div className="mt-8 flex justify-center md:justify-start space-x-4">
+						<a
+							href="https://www.facebook.com/linwrath.tofu"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-2xl text-gray-300 hover:text-white"
+						>
+							<FaFacebook />
+						</a>
+						<a
+							href="https://www.instagram.com/linwrath_tofu/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-2xl text-gray-300 hover:text-white"
+						>
+							<FaInstagram />
+						</a>
+						<a
+							href="https://github.com/alinvarat" 
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-2xl text-gray-300 hover:text-white"
+						>
+							<FaGithub />
+						</a>
+					</div>
 				</div>
 				<div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-                    <AnimatedWrapper delay={0.3}>
-                        <div className="relative w-72 h-72 md:w-96 md:h-96">
-                            <div className="absolute inset-0 bg-yellow-300 rounded-full"></div>
-                            <Image
-                                src="/your-avatar.png"
-                                alt="Your Avatar"
-                                width={400}
-                                height={400}
-                                className="relative object-cover rounded-full"
-                            />
-                        </div>
-                    </AnimatedWrapper>
+					<div className="relative w-72 h-72 md:w-96 md:h-96">
+						<div className="absolute inset-0 bg-blue-400 rounded-full opacity-50"></div>
+						<Image
+							src="/your-avatar.png"
+							alt="Your Avatar"
+							width={400}
+							height={400}
+							className="relative object-cover rounded-full"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>

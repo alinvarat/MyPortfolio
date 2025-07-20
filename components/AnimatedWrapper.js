@@ -1,16 +1,28 @@
 "use client";
-import { motion } from 'framer-motion';
 
-const AnimatedWrapper = ({ children, delay = 0 }) => {
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const AnimatedSection = ({ children }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.2 });
+
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: delay }}
+      ref={ref}
+      variants={variants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       {children}
     </motion.div>
   );
 };
 
-export default AnimatedWrapper;
+export default AnimatedSection;

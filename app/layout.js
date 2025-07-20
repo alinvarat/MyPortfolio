@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} antialiased`}>
-        <Navbar /> {/* 2. วาง Navbar ไว้นอก main */}
+        <Navbar /> {}
         <main>{children}</main>
       </body>
     </html>

@@ -10,7 +10,7 @@ html {
 }
 .scroll-section {
   scroll-snap-align: start;
-  height: 100vh; /* ทำให้แต่ละ section สูงเต็มหน้าจอ */
+  height: 100vh;
 }
 .grid-container {
 	display: flex;
@@ -28,3 +28,8 @@ html {
 		flex-direction: row;
 	}
 }
+body {
+  background-color: #3d03c3;
+  color: #e2e8f0; /* slate-200 */
+}
+

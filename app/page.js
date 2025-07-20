@@ -4,27 +4,40 @@ import HistorySection from '@/components/HistorySection';
 import SkillsSection from '@/components/SkillsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
+import AnimatedSection from '@/components/AnimatedWrapper';
 
 export default function Home() {
   return (
     <>
       <div id="home" className="scroll-section">
-        <HeroSection />
+        <AnimatedSection>
+          <HeroSection />
+        </AnimatedSection>
       </div>
       <div id="about" className="scroll-section">
-        <AboutSection />
+        <AnimatedSection>
+          <AboutSection />
+        </AnimatedSection>
       </div>
       <div id="history" className="scroll-section">
-        <HistorySection />
+        <AnimatedSection>
+          <HistorySection />
+        </AnimatedSection>
       </div>
       <div id="skills" className="scroll-section">
-        <SkillsSection />
+        <AnimatedSection>
+          <SkillsSection />
+        </AnimatedSection>
       </div>
       <div id="work" className="scroll-section">
-        <ProjectsSection />
+        <AnimatedSection>
+          <ProjectsSection />
+        </AnimatedSection>
       </div>
       <div id="contact" className="scroll-section">
-        <ContactSection />
+        <AnimatedSection>
+          <ContactSection />
+        </AnimatedSection>
       </div>
     </>
   );

@@ -12,7 +12,7 @@ const HeroSection = () => {
 			behavior: "smooth",
 		});
 	};
-
+	
 	return (
 		// แก้ไข: เปลี่ยนโครงสร้างทั้งหมดเพื่อสร้าง Layout แบบซ้อนทับ
 		<section className="relative bg-transparent min-h-screen flex items-center overflow-hidden">
@@ -31,8 +31,7 @@ const HeroSection = () => {
 				/>
 			</div>
 
-			{/* Layer 2: เนื้อหา (แสดงด้านซ้ายและอยู่ด้านบน) */}
-			<div className="relative z-10 container mx-auto flex items-center h-full min-h-screen">
+			<div className="relative z-10 container mx-auto flex items-center ">
 				<div className="md:w-1/2 text-center md:text-left p-4">
 					<h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
 						สวัสดีผมชื่อ<span className="text-yellow-400">หยก</span>

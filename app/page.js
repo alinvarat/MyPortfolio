@@ -14,31 +14,6 @@ export default function Home() {
           <HeroSection />
         </AnimatedSection>
       </div>
-      <div id="about" className="scroll-section">
-        <AnimatedSection>
-          <AboutSection />
-        </AnimatedSection>
-      </div>
-      <div id="history" className="scroll-section">
-        <AnimatedSection>
-          <HistorySection />
-        </AnimatedSection>
-      </div>
-      <div id="skills" className="scroll-section">
-        <AnimatedSection>
-          <SkillsSection />
-        </AnimatedSection>
-      </div>
-      <div id="work" className="scroll-section">
-        <AnimatedSection>
-          <ProjectsSection />
-        </AnimatedSection>
-      </div>
-      <div id="contact" className="scroll-section">
-        <AnimatedSection>
-          <ContactSection />
-        </AnimatedSection>
-      </div>
     </>
   );
 }
